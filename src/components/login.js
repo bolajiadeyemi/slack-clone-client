@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Form, Container } from "semantic-ui-react";
+import { loginUser } from "../utils";
 
 export class Login extends Component {
   state = {
@@ -19,10 +20,18 @@ export class Login extends Component {
     });
   };
 
-  loginUser = (event) => {
+  loginUser = async (event) => {
     event.preventDefault();
 
-    console.log(this.state);
+    const { username, password } = this.state;
+    try {
+      const result = await loginUser({
+        username,
+        password,
+      });
+    } catch (e) {
+      console.log("from login", e);
+    }
   };
 
   render() {
