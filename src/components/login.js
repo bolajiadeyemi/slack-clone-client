@@ -25,12 +25,14 @@ export class Login extends Component {
 
     const { username, password } = this.state;
     try {
-      const result = await loginUser({
+      const { data } = await loginUser({
         username,
         password,
       });
+     this.props.onAuth(data)
+   
     } catch (e) {
-      console.log("from login", e);
+      console.log(e);
     }
   };
 
