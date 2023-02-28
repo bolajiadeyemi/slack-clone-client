@@ -66,3 +66,8 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `yarn build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+/**
+ * turns "foo <!-- boop-counter -->1<!-- /boop-counter --> bar"
+ *  into "foo <!-- boop-counter -->2<!-- /boop-counter --> bar"
+ */
