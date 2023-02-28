@@ -67,7 +67,5 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
 
-/**
- * turns "foo <!-- boop-counter -->1<!-- /boop-counter --> bar"
- *  into "foo <!-- boop-counter -->2<!-- /boop-counter --> bar"
- */
+
+### I have been booped on the nose <!-- boop-counter -->0<!-- /boop-counter --> times.
